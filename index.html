@@ -36,10 +36,95 @@
       <a href="#">HEADER SKIPLINKMENU</a>
     </div>
     <header class="header">
-      <div class="content">
+      <div class="content1">
         <nav class="nav">
           <ul>
-            <li id="submenu_btn"><a href="#" onclick="return false;">메뉴</a></li>
+            <li id="submenu_btn">
+              <a href="#" onclick="return false;">메뉴</a>
+              <div class="submenu">
+                <div class="content1">
+                  <ul class="submenu_list">
+                    <li>
+                      <div class="submenu_txt">
+                        <p>더 보기</p>
+                        <p><a href="#">신제품 시계</a></p>
+                        <p><a href="#">모든 시계</a></p>
+                        <p><a href="#">스트랩</a></p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="submenu_txt">
+                        <p>시계 서비스</p>
+                        <p><a href="#">공식 서비스 센터 찾아보기</a></p>
+                        <p><a href="#">My IWC - 품질 보증 연장</a></p>
+                        <p><a href="#">메뉴얼 및 품질 보증</a></p>
+                        <p><a href="#">고객 서비스 개요</a></p>
+                        <p><a href="#">항성시를 계산해 보세요</a></p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="submenu_txt">
+                        <p>IWC 샤프하우젠 워치메이킹</p>
+                        <p><a href="#">IWC 매뉴팩처</a></p>
+                        <p><a href="#">칼리버</a></p>
+                        <p><a href="#">컴플리케이션</a></p>
+                        <p><a href="#">IWC 컬렉션 소개</a></p>
+                        <p><a href="#">지난 컬렉션 검색</a></p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="submenu_txt">
+                        <p>IWC의 세계</p>
+                        <p><a href="#">IWC 최신 소식 - 더 저널</a></p>
+                        <p><a href="#">IWC 샤프하우젠 뮤지엄</a></p>
+                        <p><a href="#">IWC 샤프하우젠 소개</a></p>
+                        <p><a href="#">IWC 뉴스 & 이벤트</a></p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="submenu_txt">
+                      <p>가까운 부티크</p>
+                        <p>
+                          WC 신세계백화점 영등포점 부티크
+                          <br>
+                          서울시 영등포구 영등포동 4가 434-5
+                          150-985, Seoul
+                          <br>
+                          +82226391950
+                        </p>
+                        <p class="txt_bold"><a href="#">다른 매장 찾기</a></p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="submenu_txt">
+                        <p>문의처 한국</p>
+                        <p class="txt_bold"><a href="#">이메일</a></p>
+                        <p class="txt_bold"><a href="#">+82 2 3440 5876</a></p>
+                      </div>
+                      <div class="submenu_txt">
+                        <p>뉴스레터</p>
+                        <p>IWC 샤프하우젠의 세계에 대한 최신 소식을 정기적으로 받아보세요</p>
+                        <p class="txt_bold"><a href="#">뉴스레터 구독하기</a></p>
+                      </div>
+                    </li>
+                  </ul>
+                  <hr>
+                </div>
+              </div>
+            </li>
+            <!-- submenu style -->
+            <script>
+              $(function(){
+                $('#submenu_btn').click(function(){
+                  var topVal=$('.submenu').css('top');
+                  if(topVal=='80px'){
+                    $('.submenu').css('top','-900%').css('background-color','transparent');
+                  }else{
+                    $('.submenu').css('top','100%').css('background-color','#ffffff');
+                  }
+                });
+              });
+            </script>
             <li id="clock_btn"><a href="#" onclick="return false;">시계</a></li>
             <li><a href="#">포르투기저2020</a></li>
           </ul>
@@ -81,7 +166,7 @@
               <img src="images/header_icon02.svg" alt="icon02">
             </a>
               <form class="login_form">
-                <div class="content">
+                <div class="content1">
                   <div class="login_close">
                     <img id="close_btn" src="images/close_btn.svg" alt="close">
                   </div>
@@ -154,9 +239,8 @@
             <li><a href="#" onclick="return false;">
               세로선
             </a></li>
-            <li class="lang_btn"><a href="#" onclick="return false;">
-              KR
-              <span>^</span>
+            <li id="lang_btn"><a href="#" onclick="return false;">
+              KR<span class="rotate_sim">^</span>
             </a>
             <div class="lang_box">
               <ul class="tri">
@@ -164,8 +248,60 @@
                 <li></li>
                 <li></li>
               </ul>
-              <div></div>
+              <div class="lang_container">
+                <hr>
+                <p>IWC에 오신 것을 환영합니다.</p>
+                <p>참고: 장바구니는 최초 선택하신 국가에만 저장됩니다.</p>
+                <h4>국가선택</h4>
+                <ul class="sel_cont">
+                  <li><a href="#">가봉</a></li>
+                  <li><a href="#">가나</a></li>
+                  <li><a href="#">나이지리아</a></li>
+                  <li><a href="#">남아공</a></li>
+                  <li><a href="#">대한민국</a></li>
+                  <li><a href="#">라트비아</a></li>
+                  <li><a href="#">미국</a></li>
+                  <li><a href="#">벨기에</a></li>
+                  <li><a href="#">사우디아라비아</a></li>
+                  <li><a href="#">알제리</a></li>
+                  <li><a href="#">자메이카</a></li>
+                  <li><a href="#">칠레</a></li>
+                  <li><a href="#">캐나다</a></li>
+                  <li><a href="#">태국</a></li>
+                  <li><a href="#">프랑스</a></li>
+                  <li><a href="#">호주</a></li>
+                </ul>
+                <p></p>
+                <h4>언어선택</h4>
+                <ul class="sel_lang">
+                  <li><a href="#">영어</a></li>
+                  <li><a href="#">아랍어</a></li>
+                  <li><a href="#">중국어</a></li>
+                  <li><a href="#">일본어</a></li>
+                  <li><a href="#">한국어</a></li>
+                  <li><a href="#">스페인어</a></li>
+                  <li><a href="#">프랑스어</a></li>
+                </ul>
+                <p></p>
+              </div>
             </div>
+            <!-- lang box event -->
+            <script>
+              $(function(){
+                $('.lang_container>h4').click(function(){
+                  $(this).next().slideToggle(200);
+                });
+                $('.lang_container>ul>li').click(function(){
+                  var natLang=$(this).children().text();
+                  $(this).parent().prev().text(natLang);
+                  $(this).parent().slideUp(200);
+                });
+                $('#lang_btn').click(function(){
+                  $('.lang_box').toggle();
+                  $('.rotate_sim').toggleClass('active');
+                });
+              });
+            </script>
           </li>
           </ul>
         </div>
