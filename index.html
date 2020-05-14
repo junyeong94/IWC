@@ -1,0 +1,98 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 제작자 -->
+  <meta name="author" content="hong">
+  <!-- 설명 -->
+  <meta name="description" content="IWC 사이트입니다.">
+  <!-- 키워드 -->
+  <meta name="keywords" content="IWC, 시계, 아이더블유씨, clock , 명품 , luxury">
+  <!-- 링크공유 -->
+  <meta property="og:title" content="IWC">
+  <meta property="og:url" content="https://junyeong94.github.io/IWC">
+  <meta property="og:image" content="images/ogimage.png">
+  <meta property="og:description" content="완벽한 시계 포르투기저는 영원히 멈추지 않습니다.">
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <!-- jQuery   -->
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <title>스위스 럭셔리 시계 | IWC 샤프하우젠</title>
+  <!-- reset style -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/iwc_basic.css">
+  <!-- skip style -->
+  <link rel="stylesheet" href="css/skip.css">
+  <link rel="stylesheet" href="css/header.css">
+  
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="skip">
+      <a href="#">HEADER SKIPLINKTEXT</a>
+      <a href="#">HEADER SKIPLINKMENU</a>
+    </div>
+    <header class="header">
+      <div class="content">
+        <nav class="nav">
+          <ul>
+            <li id="submenu_btn"><a href="#" onclick="return false;">메뉴</a></li>
+            <li id="clock_btn"><a href="#" onclick="return false;">시계</a></li>
+            <li><a href="#">포르투기저2020</a></li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo">
+        </div>
+        <div class="header_icons">
+          <ul>
+            <li id="search_btn">
+              <a href="#" onclick="return false;">
+                <img src="images/header_icon01-1.svg" alt="icon01-1">
+                <img src="images/header_icon01.svg" alt="icon01">
+              </a>
+              <form class="search_form">
+                <input type="search" id="search01" placeholder="Search">
+                <input type="button" value="검색">
+              </form>
+            </li>
+            <li id="login_btn"><a href="#" onclick="return false;">
+              <img src="images/header_icon02-1.svg" alt="icon02-1">
+              <img src="images/header_icon02.svg" alt="icon02">
+            </a></li>
+            <li><a href="#" onclick="return false;">
+              <img src="images/header_icon03-1.svg" alt="icon03-1">
+              <img src="images/header_icon03.svg" alt="icon03">
+            </a></li>
+            <li><a href="#" onclick="return false;">
+              세로선
+            </a></li>
+            <li class="lang_btn"><a href="#" onclick="return false;">
+              KR
+              <span>^</span>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="section"></section>
+    <footer class="footer"></footer>
+  </div>
+  <!-- skip js -->
+  <script>
+    $(function(){
+      $('.skip>a').focus(function(){
+        $('.skip>a').removeClass('active');
+        $(this).addClass('active');
+      });
+      $('.skip>a').focusout(function(){
+        $('.skip>a').removeClass('active');
+     });
+    });
+  </script>
+
+</body>
+</html>
