@@ -3,3 +3,4 @@
 #link_top{position: fixed; right:0; top:80%; z-index:10; opacity:0; }
 #link_top.active{opacity:1;}
 #link_top>a{padding:20px; background-color:black;color:white;}
+#link_top>a.active::before{content:'맨 위로'; display:inline-block; margin-right:10px;}
