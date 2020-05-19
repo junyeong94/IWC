@@ -8,6 +8,7 @@ $(function(){
         if(submenuBottom=='80px'){
            close_sub_menu();
           $('.submenu').css('bottom','-'+submenuHeight+'px');
+          $('.submenu').css('background-color','#ffffff');
         }else{
           $('.submenu').css('bottom','100%');
         }
@@ -36,6 +37,7 @@ $(function(){
    function fsubwatchBottom(){
     var subwatchHeight=$('.subwatch').height();
     $('.subwatch').css('bottom','-'+subwatchHeight+'px');
+    $('.subwatch').css('background-color','#ffffff');
    }
 
    function watchPaddingTop(){
@@ -48,13 +50,16 @@ $(function(){
     $('#search_btn').click(function(){
         var tmp=$('.search_form').css('display');
         if(tmp=='none'){
-          $('.submenu').css('bottom','100%');
-          $('.subwatch').css('bottom','100%');
+          close_sub_menu();
           $('.search_form').css('display','flex');
           $('#search01').focus();
+          var formHeight=$('.search_form').height();
+          console.log(formHeight);
+          $('.banner').css('padding-top',formHeight+50)
         }else if(tmp=='flex'){
           $('.search_form').css('display','none');
           $('#search01').blur();
+          $('.banner').css('padding-top',0);
         }
       });
     //   login event
