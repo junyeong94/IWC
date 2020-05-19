@@ -16,3 +16,10 @@
 .button_box>input:first-child{background:#999; margin-right:5px;}
 .button_box>input:last-child{background:#000;}
 .feedback_box>p:last-of-type{font-size:12px; font-style:italic; margin-bottom:40px;}
+
+@media (max-width:767px){
+    .feedback>.feedback_content>.feedback_box {
+        width: 300px;
+        padding: 6px 10px;}
+.feedback_box>p{font-size: 13px;}
+}

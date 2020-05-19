@@ -125,4 +125,5 @@ justify-content:space-between;align-items:center; background-color:#fff; }
     .header_icons>ul>li{padding:0 8px;}
     .search_for>input:last-child{display:none;}
     .iwc_join{width:100%;}
+    .search_form>input:last-child{width:14%;padding: 10px 0px;font-size: 12px;}
 }
